@@ -1,3 +1,6 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/zondaTW/go-todolist-server
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/zondaTW/vue-todolist
