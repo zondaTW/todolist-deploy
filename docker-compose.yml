@@ -9,6 +9,8 @@ services:
             - 5000:5000
         links:
             - db:todolist-link
+        volumes:
+            - ./env.ini:/go/app/env.ini
     db:
         image: postgres:latest
         environment:

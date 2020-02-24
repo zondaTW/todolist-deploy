@@ -2,7 +2,7 @@
 
 ## Setup
 
-Create env.ini file in backend folder.  
+Create env.ini file.  
 
 ```ini
 [System]
