@@ -11,7 +11,7 @@ port = 5000
 auth_key = secret key
 
 [Database]
-host = todolist-link
+host = db
 port = 5432
 user = postgres
 password = password

@@ -1,14 +1,12 @@
 version: '3'
 
 services:
-    web:
+    backend:
         build:
             context: ./backend
             dockerfile: ./Dockerfile
         ports:
             - 5000:5000
-        links:
-            - db:todolist-link
         volumes:
             - ./env.ini:/go/app/env.ini
     db:
