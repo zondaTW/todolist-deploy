@@ -34,5 +34,12 @@ Modify secret files in k8s directory:
 
 Apply:  
 `$ kubectl apply -f k8s`  
-and get ip address:  
+Get ip address:  
 `$ kubectl get ingress.extensions/ingress-service`  
+Get Weave Scope external port:  
+`kubectl get svc -n weave`  
+
+## Reference
+
+[The Kubernetes Handbook](https://www.freecodecamp.org/news/the-kubernetes-handbook/)  
+[Installing Weave Scope](https://www.weave.works/docs/scope/latest/installing/#orchestrators)  
