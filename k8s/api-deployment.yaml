@@ -17,6 +17,9 @@ spec:
           image: zondayang/todolist_backend
           ports:
             - containerPort: 5000
+          resources:
+            requests:
+              cpu: 200m
           envFrom:
             - configMapRef:
                 name: api-config-map

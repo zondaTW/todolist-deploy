@@ -32,6 +32,10 @@ Modify secret files in k8s directory:
     password: cGFzc3dvcmQ= # password that encoded by base64
     ```
 
+When you use minkube, need to:  
+`$ minikube addons enable ingress`  
+`$ minikube addons enable metrics-server`  
+
 Apply:  
 `$ kubectl apply -f k8s`  
 Get ip address:  
