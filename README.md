@@ -32,16 +32,17 @@ Modify secret files in k8s directory:
     password: cGFzc3dvcmQ= # password that encoded by base64
     ```
 
-When you use minkube, need to:  
-`$ minikube addons enable ingress`  
-`$ minikube addons enable metrics-server`  
+```shell
+$ gcloud config set project [project_id]
+$ gcloud config set compute/zone [zone]
+$ gcloud container clusters get-credentials [project_id]
 
-Apply:  
-`$ kubectl apply -f k8s`  
-Get ip address:  
-`$ kubectl get ingress.extensions/ingress-service`  
-Get Weave Scope external port:  
-`kubectl get svc -n weave`  
+# Apply
+$ kubectl apply -f k8s
+
+# Get ip address
+$ kubectl get ingress.extensions/ingress-service
+```
 
 ## Reference
 

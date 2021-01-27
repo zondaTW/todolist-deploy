@@ -10,4 +10,3 @@ data:
   DB_PORT: '5432'
   DB_USER: postgres
   DB_NAME: todo_database
-  DB_PASSWORD: password

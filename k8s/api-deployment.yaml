@@ -14,12 +14,14 @@ spec:
     spec:
       containers:
         - name: api
-          image: zondayang/todolist_backend
+          image: docker.io/zondayang/todolist_backend
           ports:
             - containerPort: 5000
           resources:
             requests:
-              cpu: 200m
+              cpu: "100m"
+            limits:
+              cpu: "200m"
           envFrom:
             - configMapRef:
                 name: api-config-map
@@ -37,4 +39,4 @@ spec:
       initContainers:
       - name: init-postgres
         image: busybox:1.28
-        command: ['sh', '-c', "until nslookup postgres-cluster-ip-service; do echo waiting for postgres; sleep 2; done"]
+        command: ['sh', '-c', "until nslookup postgres-cluster-ip-service; do echo waiting for postgres; sleep 5; done"]

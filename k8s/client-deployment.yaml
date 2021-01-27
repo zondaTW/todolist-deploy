@@ -14,6 +14,11 @@ spec:
     spec:
       containers:
         - name: client
-          image: zondayang/todolist_frontend
+          image: docker.io/zondayang/todolist_frontend
           ports:
             - containerPort: 80
+          resources:
+            requests:
+              cpu: "200m"
+            limits:
+              cpu: "400m"
